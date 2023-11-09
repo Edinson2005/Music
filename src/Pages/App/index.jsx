@@ -1,4 +1,5 @@
 import { useRoutes, BrowserRouter } from 'react-router-dom'
+import Home from '../Home'
 import Album from '../Album'
 import Artist  from '../Artist'
 import Genre from '../Genre'
@@ -7,6 +8,7 @@ import Navbar from '../../Components/Navbar'
 
 const AppRoutes = () => {
     let routes = useRoutes([
+        {path: '/home', element: <Home />},
         {path: '/', element: <Album />},
         {path: '/artist', element: <Artist/>},
         {path: '/genre', element: <Genre/>},
