@@ -5,7 +5,7 @@ const Navbar = ()=>{
     const activeStyle = 'underline underline-offset-4'
  return (
     
-    <nav className= "flex  items-center justify-between px-20 w-full py-8 bg-slate-700">
+    <nav className= "flex  items-center justify-between px-20 w-full py-8 bg-rose-700">
         
         
         <ul className="text-align-center
@@ -14,13 +14,7 @@ const Navbar = ()=>{
             <li>
                 <NavLink to='/home'
                 className={({isActive}) => isActive ? activeStyle : undefined}>
-                   Home     
-                </NavLink>
-            </li>
-            <li>
-            <NavLink to='/'
-                className={({isActive}) => isActive ? activeStyle : undefined}>
-                    Album
+                    <box-icon name='home-alt' size='lg' animation='burst-hover'></box-icon>
                 </NavLink>
             </li>
             <li>
@@ -29,6 +23,13 @@ const Navbar = ()=>{
                     Artist
                 </NavLink>
             </li>
+            <li>
+            <NavLink to='/'
+                className={({isActive}) => isActive ? activeStyle : undefined}>
+                    Album
+                </NavLink>
+            </li>
+            
             <li>
             <NavLink to='/genre'
                 className={({isActive}) => isActive ? activeStyle : undefined}>

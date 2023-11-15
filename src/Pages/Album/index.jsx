@@ -2,7 +2,7 @@
 function Album(){
     return(
         <>
-        hola desde album
+        hola desde albuml
         </>
     )
 
