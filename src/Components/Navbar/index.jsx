@@ -24,16 +24,16 @@ const Navbar = ()=>{
                 </NavLink>
             </li>
             <li>
-            <NavLink to='/'
+            <NavLink to='/genre'
                 className={({isActive}) => isActive ? activeStyle : undefined}>
-                    Album
+                    Genre
                 </NavLink>
             </li>
             
             <li>
-            <NavLink to='/genre'
+            <NavLink to='/'
                 className={({isActive}) => isActive ? activeStyle : undefined}>
-                    Genre
+                    Album
                 </NavLink>
             </li>
             <div className="absolute right-0 w-20 top-1">
