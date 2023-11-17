@@ -10,7 +10,7 @@ function Home() {
                     style={{ width: '400px' }} />
             </div>
             <div className='text-center text-xl font-serif'>
-                <p>"Deja que la música encuentre su camino a través de tu alma"</p>
+                <p>"Let the music find its way through your soul"</p>
             </div>
         </>
     )

@@ -3,13 +3,14 @@ import Layout from "../../Components/Layout"
 import CardGenre from "../../Components/CardGenre"
 import React from "react"
 
+
 function Genre() {
    const [items, setItems ] = useState(null)
    
    useEffect (() =>{
    fetch('https://kaoxdc.pythonanywhere.com/api-ficha2669739/Genre/')
    .then(response => response.json())
-   .then(data=> setItems(data))
+   .then(dat=> setItems(dat))
    },[])
    
    return (
@@ -17,7 +18,7 @@ function Genre() {
         <Layout>
         
   
-          <div className='grid gap-4 grid-cols-4 w-full max-w-screen-lg'>
+          <div className='grid gap-4 grid-cols-5 w-full max-w-screen-lg'>
               {
                   items?.map(item => (
                       <CardGenre key={item.id} data = {item}/>
