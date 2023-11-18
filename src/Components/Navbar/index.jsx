@@ -40,7 +40,7 @@ const Navbar = ()=>{
             </li>
             
             <li>
-            <NavLink to='/'
+            <NavLink to='/Description'
             
                 className={({isActive}) => isActive ? activeStyle : undefined}>
                     <button className="bg-teal-800 hover:bg-black py-3 px-5
